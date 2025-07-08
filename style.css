@@ -1,0 +1,277 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #4CAF50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-item button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 5px; /* เพิ่มระยะห่าง */
+}
+
+.product-item button:hover {
+    background-color: #45a049;
+}
+
+#cart-items .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #eee;
+    padding: 10px 0;
+}
+
+#cart-items .cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item span {
+    flex: 1;
+}
+
+.cart-item button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.cart-item button:hover {
+    background-color: #da190b;
+}
+
+.cart-summary {
+    text-align: right;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+}
+
+.cart-summary p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#checkout-button {
+    background-color: #008CBA;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#checkout-button:hover {
+    background-color: #007bb5;
+}
+
+#empty-cart-message {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* สไตล์สำหรับส่วนจัดการสินค้า (Admin) */
+#admin-product-management {
+    background-color: #e6ffe6;
+    border: 1px solid #c8e6c9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+#admin-product-management h3 {
+    color: #2e8b57;
+    margin-top: 25px;
+    border-bottom: 1px dashed #b2dfdb;
+    padding-bottom: 5px;
+}
+
+#add-product-form label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+#add-product-form input[type="text"],
+#add-product-form input[type="number"] {
+    width: calc(100% - 130px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#add-product-form button[type="submit"] {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+#add-product-form button[type="submit"]:hover {
+    background-color: #0b7dda;
+}
+
+/* สไตล์สำหรับปุ่มลบในส่วนจัดการสินค้า */
+.manage-product-item .delete-button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.manage-product-item .delete-button:hover {
+    background-color: #da190b;
+}
+
+/* สไตล์สำหรับส่วน QR Code */
+#qr-code-section {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.qr-container {
+    margin-top: 20px;
+}
+
+.qr-container img {
+    max-width: 250px; /* ปรับขนาดตามต้องการ */
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qr-container p {
+    font-size: 1.1em;
+    margin-top: 20px;
+    color: #555;
+}
+
+#back-to-shop-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+#back-to-shop-button:hover {
+    background-color: #5a6268;
+}
